@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EBC4BC2E-F4D3-40C7-8C1A-4DA12E965417</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CAReplicatorLayerTest</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7CC58FEE7ACEA91736C2C4518FCC51AF63EC9467</key>
+		<string>https://github.com/sixTiger/CAReplicatorLayerTest.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CAReplicatorLayerTest 动画测试/CAReplicatorLayerTest.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7CC58FEE7ACEA91736C2C4518FCC51AF63EC9467</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sixTiger/CAReplicatorLayerTest.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7CC58FEE7ACEA91736C2C4518FCC51AF63EC9467</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7CC58FEE7ACEA91736C2C4518FCC51AF63EC9467</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CAReplicatorLayerTest</string>
+		</dict>
+	</array>
+</dict>
+</plist>

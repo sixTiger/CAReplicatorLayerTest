@@ -15,6 +15,9 @@ class ViewController: UIViewController {
         animation1();
         animation2();
         animation3();
+        animation4();
+        
+        animation3();
     }
     
     override func didReceiveMemoryWarning() {
@@ -100,9 +103,50 @@ class ViewController: UIViewController {
         
     }
     /**
-    跟随动画
+    动画加载的效果
     */
     func animation3(){
+        let r = CAReplicatorLayer()
+        r.frame = CGRectMake(20,100,200.0,200.0)
+        r.cornerRadius = 10.0
+        r.backgroundColor = UIColor(white:0.0,alpha:0.75).CGColor
+        // 锚点
+        view.layer.addSublayer(r)
+        
+        // 创建一个小点
+        let dot = CALayer()
+        dot.bounds = CGRectMake(0.0,0.0,14.0,14.0)
+        dot.position = CGPointMake(100.0,40.0)
+        dot.backgroundColor = randromColor().CGColor
+        dot.borderColor = randromColor().CGColor
+        dot.borderWidth = 1.0
+        dot.cornerRadius = 3.0
+        r.addSublayer(dot)
+        
+        // 复制15个小白点
+        let nrDots : Int = 15
+        r.instanceCount = nrDots
+        let angle = CGFloat(2 * M_PI)/CGFloat(nrDots)
+        r.instanceTransform = CATransform3DMakeRotation(angle, 0.0, 0.0, 1.0)
+        
+        // 添加动画
+        dot.opacity = 0.0
+        let duration : CFTimeInterval = 1.5
+        let shrink = CABasicAnimation(keyPath:"opacity")
+        shrink.fromValue = 1.0
+        shrink.toValue = 0.1
+        shrink.duration = duration
+        shrink.repeatCount = Float.infinity
+        dot.addAnimation(shrink,forKey:nil)
+        
+        // 设置动画间隔
+        r.instanceDelay = duration/Double(nrDots)
+        
+    }
+    /**
+    跟随动画
+    */
+    func animation4(){
         let r = CAReplicatorLayer()
         r.bounds = CGRectMake(0, 0, 300, 300)
         r.cornerRadius = 10;
